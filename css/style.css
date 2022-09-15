@@ -1,5 +1,5 @@
 body {
-    background: whitesmoke;
+    background: black;
     color: #6ecddd;
     font-family: "Source Code Pro", sans-serif;
     text-align: center;
@@ -13,10 +13,26 @@ h1 {
     text-align: center;
     letter-spacing: 1px;
     word-spacing: 0.15em;
-    font-size: 3em;
     line-height: 1.2;
-    transform: translateY(52%);
-    font-family: "Comic Sans MS", monospace;
+    font-family: "Wingdings", monospace;
+    font-size: 16pt;
+    margin-top: 10%;
+    font-weight: bold;
+}
+
+/* Stop anchor links from changing color*/
+a {color:#6ecddd; text-decoration: none;}      /* Unvisited link  */
+a:visited {color:#6ecddd;} /* Visited link    */
+/* changes font  over hover */
+a:hover {color:#6ecddd;
+    font-family: "Source Code Pro", sans-serif;}
+a:active {color:#6ecddd;}  /* Selected link   */
+
+
+p {
+    font-size: 16pt;
+    margin-top: 10%;
+    font-weight: bold;
 }
 
 #toggle {
