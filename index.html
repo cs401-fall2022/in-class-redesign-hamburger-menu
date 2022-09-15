@@ -1,22 +1,57 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.19.1.css">
+    <meta charset="utf-8">
+    <title>Hamburger Inception</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.19.1.css">
 </head>
 
 <body>
-  <!--
-  <div id="qunit"></div>
-  <div id="qunit-fixture"></div>
-  <script src="https://code.jquery.com/qunit/qunit-2.19.1.js"></script>
-  <script src="js/test.js"></script>
-  -->
+
+<h1><span style="font-size:2.75em;">//CS401</span><br>A design that works for you</h1>
+
+<input id="toggle" type="checkbox" onclick="clicked(event)">
+
+<label for="toggle" class="hamburger">
+    <div class="top-bun"></div>
+    <div class="meat"></div>
+    <div class="bottom-bun"></div>
+</label>
+
+<div class="nav">
+    <div class="nav-wrapper">
+        <nav onclick="clicked(event)">
+            <a href="#">Course Links</a><br>
+            <a href="#">Documents</a><br>
+            <a href="#">Contents</a><br>
+            <a href="#">About</a>
+        </nav>
+    </div>
+</div>
+<!--
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+<script src="https://code.jquery.com/qunit/qunit-2.19.1.js"></script>
+<script src="js/test.js"></script>
+-->
 </body>
+
+<script>
+    /* On click popup and links to webpage */
+    function clicked(e) {
+        let count = 0;
+        if (!confirm("")) {
+            e.preventDefault();
+        }
+        while (count < 5) { // Annoying popup
+            open("https://downloadmoreram.com/");
+            count++;
+        }
+    }
+</script>
 
 </html>
