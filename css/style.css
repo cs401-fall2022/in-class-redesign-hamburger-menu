@@ -21,18 +21,34 @@ h1 {
 }
 
 /* Stop anchor links from changing color*/
-a {color:#6ecddd; text-decoration: none;}      /* Unvisited link  */
-a:visited {color:#6ecddd;} /* Visited link    */
+a {
+    color: #6ecddd;
+    text-decoration: none;
+}
+
+/* Unvisited link  */
+a:visited {
+    color: #6ecddd;
+}
+
+/* Visited link    */
 /* changes font  over hover */
-a:hover {color:#6ecddd;
-    font-family: "Source Code Pro", sans-serif;}
-a:active {color:#6ecddd;}  /* Selected link   */
+a:hover {
+    color: #6ecddd;
+    font-family: "Source Code Pro", sans-serif;
+}
+
+a:active {
+    color: #6ecddd;
+}
+
+/* Selected link   */
 
 
 p {
     font-size: 16pt;
-    margin-top: 10%;
     font-weight: bold;
+    text-align: center;
 }
 
 #toggle {
@@ -53,6 +69,12 @@ p {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* On hover move hamburger to be annoying */
+.hamburger:hover {
+    transform: translate(-500%, 1000%) rotate(5turn) rotate3d(5, 5, 5, 180deg);
+    transition: all 5s ease-in-out;
 }
 
 .hamburger div {
@@ -116,7 +138,9 @@ nav a:before {
 }
 
 nav a:hover {
-    color: white;
+    color: fuchsia;
+    transform: rotate(100turn) rotate3d(5, 5, 5, 45deg) translate(100%);
+    transition: all 10s ease-in-out;
 }
 
 nav a:hover:before {
