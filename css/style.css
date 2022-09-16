@@ -75,6 +75,7 @@ p {
 .hamburger:hover {
     transform: translate(-500%, 1000%) rotate(5turn) rotate3d(5, 5, 5, 180deg);
     transition: all 5s ease-in-out;
+    cursor: pointer;
 }
 
 .hamburger div {
@@ -168,4 +169,16 @@ Animations
 #toggle:checked + .hamburger + .nav {
     top: 0;
     transform: scale(1);
+}
+
+input {
+    background-color: lawngreen;
+    border-color: forestgreen;
+    scale: 2;
+    cursor: pointer;
+}
+
+input:hover {
+    transform: scale(500%); /* increase size by 5x */
+
 }
