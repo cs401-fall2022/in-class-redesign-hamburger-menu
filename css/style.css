@@ -115,6 +115,15 @@ Nav Styles
 nav {
     text-align: left;
     margin-left: 25%;
+    /* blinking page */
+    animation: blinker 1.5s linear infinite;
+}
+
+/* keyframe blinker */
+@keyframes blinker {
+    20% {
+        opacity: 0;
+    }
 }
 
 nav a {
@@ -179,6 +188,17 @@ input {
 }
 
 input:hover {
-    transform: scale(500%); /* increase size by 5x */
+    transform: scale(300%); /* increase size */
 
+}
+/* Style embedded video */
+iframe {
+    position: fixed;
+    top: 15px;
+    left: auto;
+    max-width: 280px;
+    max-height: 158px;
+    width: 280px;
+    height: 158px;
+    transform: translate(130%, 280%);
 }
