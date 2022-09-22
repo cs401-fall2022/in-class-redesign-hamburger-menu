@@ -38,10 +38,21 @@
     <div class="bottom-bun"></div>
 </label>
 
+<!-- Navigation page -->
 <div class="nav">
+    <!-- Dropdown menu for course links -->
+    <div class="dropdown">
+        <button class="drop">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="https://learn.zybooks.com/zybook/BOISESTATECS401516PanterFall2022">Textbook</a>
+            <a href="https://piazza.com/">Discussion Forum</a>
+            <a href="https://boisestatecanvas.instructure.com/courses/14640/grades">Grades</a>
+            <a href="https://boisestatecanvas.instructure.com/courses/14640">Office Hours</a>
+        </div>
+    </div>
+    <!-- Standard links -->
     <div class="nav-wrapper">
         <nav onclick="clicked(event)">
-            <a href="courseLinks.html">Course Links</a><br>
             <a href="#">Documents</a><br>
             <a href="#">Contents</a><br>
             <a href="#">About</a>
@@ -49,19 +60,12 @@
     </div>
 </div>
 
-<!-- Better Image -->
-<div>
-    <br>
-    <img src="betterImage.jpg" alt="better image">
-</div>
-
 <!-- Welcome -->
-<!--
-<div id="welcome">
-    <h2>Welcome!</h2>
-    <a href="#welcome">#</a>
+<div class="welcomeHome" id="welcome">
+    <h2><a href="#">Welcome!</a></h2>
     <section>
-        <p> Welcome to the class! My name is Shane Panter and I will be your instructor for
+        <p class="welcome">
+            Welcome to the class! My name is Shane Panter and I will be your instructor for
             this course. For many students, this will be the first time you have been exposed
             to web development topics. This course has been designed to take someone who has
             never seen these concepts before to being able to produce relatively complex programs
@@ -71,10 +75,11 @@
             and lab activities. Please take some time to get familiar with the course website. Pay
             close attention to when the homework assignments are due to ensure you get everything
             in on time. <br>We will be interacting with each other primarily through Github,
-            discussion forums, and videos. Get started by completing the Course Introduction homework below! </p>
+            discussion forums, and videos. Get started by completing the Course Introduction homework below!
+        </p>
     </section>
 </div>
--->
+
 <!-- Embedded video, plays automatically -->
 <iframe width="560" height="315" id="introVideo" src="https://www.youtube.com/embed/UkLlL65EyHg?autoplay=1&mute=1"
         title="YouTube video player"
@@ -100,13 +105,13 @@
     function clicked(e) {
         let count = 0;
 
-        if (!confirm("Need help navigating, just ask!")) {
-            e.preventDefault();
-        }
-        while (count < 5) { // Annoying popup
-            open("https://downloadmoreram.com/");
-            count++;
-        }
+        // if (!confirm("Need help navigating, just ask!")) {
+        //     e.preventDefault();
+        // }
+        // while (count < 5) { // Annoying popup
+        //     open("https://downloadmoreram.com/");
+        //     count++;
+        // }
     }
 </script>
 
