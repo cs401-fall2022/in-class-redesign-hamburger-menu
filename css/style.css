@@ -14,7 +14,7 @@ h1 {
     letter-spacing: 1px;
     word-spacing: 0.15em;
     line-height: 1.2;
-    font-family: "Wingdings", monospace;
+    font-family: "comic sans", monospace;
     font-size: 16pt;
     margin-top: 10%;
     font-weight: bold;
@@ -35,16 +35,14 @@ a:visited {
 /* changes font  over hover */
 a:hover {
     color: #6ecddd;
-    font-family: "Source Code Pro", sans-serif;
+    font-family: Wingdings, sans-serif;
 }
 
 a:active {
     color: #6ecddd;
 }
 
-/* Selected link   */
-
-
+/* standard paragraph */
 p {
     font-size: 16pt;
     font-weight: bold;
@@ -116,7 +114,7 @@ nav {
     text-align: left;
     margin-left: 25%;
     /* blinking page */
-    animation: blinker 1.5s linear infinite;
+   /* animation: blinker 1.5s linear infinite; LOWERS ACCESSIBILITY SCORE */
 }
 
 /* keyframe blinker */
@@ -201,4 +199,57 @@ iframe {
     width: 280px;
     height: 158px;
     transform: translate(130%, 280%);
+}
+
+/* Dropdown menu styling */
+/* Dropdown Button */
+.drop {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .drop {background-color: #3e8e41;}
+
+/* End dropdown menu styling */
+
+/* Apply background image to p.welcome */
+p.welcome {
+    background-image: url('../betterImage.jpg');
+    width: auto;
+    height: 750px;
+    color: white;
 }
