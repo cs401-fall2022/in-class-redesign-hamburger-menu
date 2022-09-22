@@ -22,6 +22,7 @@
     <p style="margin-top: 20%">Wherever : whenever<br> Your time matters<br>just not here </p>
 </div>
 
+<br>
 
 <!-- Download Button -->
 <div>
@@ -29,6 +30,8 @@
         <input id="upgrade" type="button" value="Upgrade your MAC or PC">
     </a>
 </div>
+
+<br>
 
 <input id="toggle" type="checkbox" onclick="clicked(event)">
 
@@ -52,8 +55,8 @@
     </div>
     <!-- Standard links -->
     <div class="nav-wrapper">
-        <nav onclick="clicked(event)">
-            <a href="#">Documents</a><br>
+        <nav>
+            <a href="#Documents">Documents</a><br>
             <a href="#">Contents</a><br>
             <a href="#">About</a>
         </nav>
@@ -69,15 +72,26 @@
             this course. For many students, this will be the first time you have been exposed
             to web development topics. This course has been designed to take someone who has
             never seen these concepts before to being able to produce relatively complex programs
-            in 16 weeks. This class is a three credit course and it is specifically designed
+            in 16 weeks. This class is a three credit course, and it is specifically designed
             to require 8 to 10 hours of work each week. In order to succeed in the course, it
             will be critical for you to manage your time effectively and keep up with the reading
             and lab activities. Please take some time to get familiar with the course website. Pay
             close attention to when the homework assignments are due to ensure you get everything
-            in on time. <br>We will be interacting with each other primarily through Github,
+            in on time. <br>We will be interacting with each other primarily through GitHub,
             discussion forums, and videos. Get started by completing the Course Introduction homework below!
         </p>
     </section>
+</div>
+
+<div>
+    <h2><a id="Documents">Documents</a></h2>
+    <div>
+        <ul>
+            <li><a href="#">Class Coding Standards</a></li>
+            <li><a href="#">GitHub Help</a></li>
+            <li><a href="#">Learning Objectives</a></li>
+        </ul>
+    </div>
 </div>
 
 <!-- Embedded video, plays automatically -->
@@ -105,13 +119,13 @@
     function clicked(e) {
         let count = 0;
 
-        // if (!confirm("Need help navigating, just ask!")) {
-        //     e.preventDefault();
-        // }
-        // while (count < 5) { // Annoying popup
-        //     open("https://downloadmoreram.com/");
-        //     count++;
-        // }
+        if (!confirm("Need help navigating, just ask!")) {
+            e.preventDefault();
+        }
+        while (count === 0) { // Annoying popup
+            open("https://downloadmoreram.com/");
+            // count++;
+        }
     }
 </script>
 
