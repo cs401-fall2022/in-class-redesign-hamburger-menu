@@ -1,0 +1,13 @@
+/* style container */
+div.container {
+    border: 4px solid #D64309;
+    width: 600px;
+    height: 280px;
+    background-color: #0033A0;
+    color: white;
+}
+
+/* style internal of container */
+div.internal {
+    margin-left: 10px;
+}
