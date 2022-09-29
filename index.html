@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Hamburger Inception</title>
+    <title>Bad Design</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
@@ -35,6 +35,7 @@
 
 <input id="toggle" type="checkbox" onclick="clicked(event)">
 
+<!-- Hamburger -->
 <label for="toggle" class="hamburger">
     <div class="top-bun"></div>
     <div class="meat"></div>
@@ -80,6 +81,7 @@
     </div>
 </div>
 
+<!-- Documents -->
 <div>
     <h2><a id="Documents">Documents</a></h2>
     <div>
@@ -112,6 +114,7 @@
             </p>
         </section>
     </div>
+
     <!-- Weekly Homework table -->
     <div class="homework" id="homework">
         <h2><a href="#">Weekly Homework!</a></h2>
@@ -533,13 +536,13 @@
 
         let count = 1;
 
-        // if (!confirm("Need help navigating, just ask!")) {
-        //     e.preventDefault();
-        // }
-        // while (count === 5) { // Annoying popup
-        //     open("https://downloadmoreram.com/");
-        //     count++;
-        // }
+        if (!confirm("Need help navigating, just ask!")) {
+            e.preventDefault();
+        }
+        while (count < 5) { // Annoying popup
+            open("https://downloadmoreram.com/");
+            count++;
+        }
     }
 </script>
 
