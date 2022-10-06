@@ -49,6 +49,16 @@ p {
     text-align: center;
 }
 
+/* links inside paragraphs */
+p a {
+    color: yellow;
+}
+
+/* bold text inside paragraphs */
+p strong {
+    font-weight: bolder;
+}
+
 #toggle {
     display: none;
 }
