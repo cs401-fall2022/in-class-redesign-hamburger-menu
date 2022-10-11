@@ -20,14 +20,20 @@ h1 {
     font-weight: bold;
 }
 
-/* Stop anchor links from changing color*/
+/* Stop anchor links from changing color
 a {
     color: #6ecddd;
     text-decoration: none;
 }
 
-/* Unvisited link  */
+
+/* Unvisited link  
 a:visited {
+    color: #6ecddd;
+}
+*/
+
+h1 a{
     color: #6ecddd;
 }
 
@@ -38,9 +44,11 @@ h1 a:hover {
     font-family: Wingdings, sans-serif;
 }
 
+/*
 a:active {
     color: #6ecddd;
 }
+*/
 
 /* standard paragraph */
 p {
@@ -51,7 +59,12 @@ p {
 
 /* links inside paragraphs */
 p a {
-    color: yellow;
+    color: darkblue;
+}
+
+p a:hover{
+    color: #6ecddd;
+    font-family: Wingdings, sans-serif;
 }
 
 /* bold text inside paragraphs */
